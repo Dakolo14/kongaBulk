@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Document</title>
     <style>
         *,
@@ -181,14 +182,26 @@
           text-transform: uppercase;
           padding: 16px 10px;
           width: 100%;
+          cursor: pointer;
+          transition: background-color .6s;
+        }
+
+        .btn:hover {
+          background-color: rgb(223, 135, 11);
         }
 
         select {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            cursor: pointer;
-          }
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          cursor: pointer;
+        }
+
+        .custom-select-wrapper {
+          position: relative;
+          display: inline-block;
+          width: 100%;
+        }
 
 
         @media screen and (min-width: 768px) {
@@ -434,26 +447,70 @@
                     <input type="text" id="city" name="city" placeholder="Enter City" required>
                   </div>
                   <div class="col">
-                    <label for="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="Enter State" required>
+                    <label for="product">Select State</label>
+                    <div class="custom-select-wrapper">
+                      <select id="product" name="product" class="custom-select" required>
+                        <option value="">Choose State</option>
+                        <option value="product1">Abia</option>
+                        <option value="product2">Adamawa</option>
+                        <option value="product3">Akwa Ibom</option>
+                        <option value="product4">Anambra</option>
+                        <option value="product5">Bauchi</option>
+                        <option value="product6">Bayelsa</option>
+                        <option value="product7">Benue</option>
+                        <option value="product8">Borno</option>
+                        <option value="product9">Cross River</option>
+                        <option value="product10">Delta</option>
+                        <option value="product11">Ebonyi</option>
+                        <option value="product12">Edo</option>
+                        <option value="product13">Ekiti</option>
+                        <option value="product14">Enugu</option>
+                        <option value="product15">Gombe</option>
+                        <option value="product16">Imo</option>
+                        <option value="product17">Jigawa</option>
+                        <option value="product18">Kaduna</option>
+                        <option value="product19">Kano</option>
+                        <option value="product20">Katsina</option>
+                        <option value="product21">Kebbi</option>
+                        <option value="product22">Kogi</option>
+                        <option value="product23">Kwara</option>
+                        <option value="product24">Lagos</option>
+                        <option value="product25">Nasarawa</option>
+                        <option value="product26">Niger</option>
+                        <option value="product27">Ogun</option>
+                        <option value="product28">Ondo</option>
+                        <option value="product29">Osun</option>
+                        <option value="product30">Oyo</option>
+                        <option value="product31">Plateau</option>
+                        <option value="product32">Rivers</option>
+                        <option value="product33">Sokoto</option>
+                        <option value="product34">Taraba</option>
+                        <option value="product35">Yobe</option>
+                        <option value="product36">Zamfara</option>
+                      </select>
+                      <i class="fas fa-angle-down" style="position: absolute; right: 10px; top: calc(50% - 0.5em);"></i>
+                    </div>
                   </div>
                 </div>
 
                 <!--  Product Selection  -->
                 <div class="form-group full-width">
                   <label for="product">Select Product</label>
-                  <select id="product" name="product" required>
-                    <option value="">Select</option>
-                    <option value="product1">Starlink</option>
-                    <option value="product2">Zinox Zirra</option>
-                    <option value="product3">iTEC Fan</option>
-                  </select>
+                  <div class="custom-select-wrapper">
+                    <select id="product" name="product" class="custom-select" required>
+                      <option value="">Choose Product</option>
+                      <option value="product1">Starlink</option>
+                      <option value="product2">Zinox Zirra</option>
+                      <option value="product3">iTEC Fan</option>
+                    </select>
+                    <i class="fas fa-angle-down" style="position: absolute; right: 10px; top: calc(50% - 0.5em);"></i>
+                  </div>
                 </div>
 
                 <!--  Quantity  -->
                 <div class="form-group full-width">
                   <label for="quantity">Quantity</label>
-                  <input type="text" id="quantity" name="quantity" placeholder="Enter quantity of bulk products">
+                  <input type="number" id="quantity" name="quantity" placeholder="Enter quantity of bulk products">
                 </div>
 
 
