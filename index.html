@@ -61,8 +61,12 @@
         }
 
         .flyer {
-            background-color: #f2d5d9;
-            color: #252525;
+            background-color: #E02C8C;
+            background-image: url("pattern.png");
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            color: #fff;
             padding: 16px 24px;
             text-align: left;
             margin-top: 10px;
@@ -380,17 +384,23 @@
 
   <body>
     <div class="mySlides laptop">
-      <img
-        src="image-01.png"
-        style="width: 100%"
-      />
+      <a href="#form-fill">
+        <img
+          src="image-01.png"
+          style="width: 100%"
+          alt="Order Bulk Products Banner Image"
+        />
+      </a>
     </div>
 
     <div class="mySlides mobile">
-      <img
-        src="mobile-01.png"
-        style="width: 100%"
-      />
+      <a href="#form-fill">
+        <img
+          src="mobile-01.png"
+          style="width: 100%"
+          alt="Order Bulk Products Banner Image"
+        />
+      </a>
     </div>
 
     <div class="flyer">
@@ -400,38 +410,38 @@
     <div class="catego">
       <div class="categ">
           <div class="cateo">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUBrC9ZQ75MOCb8faJHU5iQO6P0j_QqKViAyqhoIzJJ5Trsw/viewform">
-                  <img src="cat-01.png" alt="Phones" style="width:100%">
+              <a href="#form-fill">
+                  <img src="cat-01.png" alt="Beauty and Personal Health" style="width:100%">
               </a>
           </div>
           <div class="cateo">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUBrC9ZQ75MOCb8faJHU5iQO6P0j_QqKViAyqhoIzJJ5Trsw/viewform">
-                <img src="cat-02.png" alt="Phones" style="width:100%">
+            <a href="#form-fill">
+                <img src="cat-02.png" alt="HP Products" style="width:100%">
             </a>
           </div>
           <div class="cateo">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUBrC9ZQ75MOCb8faJHU5iQO6P0j_QqKViAyqhoIzJJ5Trsw/viewform">
-                <img src="cat-03.png" alt="Phones" style="width:100%">
+            <a href="#form-fill">
+                <img src="cat-03.png" alt="Groceries" style="width:100%">
             </a>
           </div>
           <div class="cateo">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUBrC9ZQ75MOCb8faJHU5iQO6P0j_QqKViAyqhoIzJJ5Trsw/viewform">
-                <img src="cat-04.png" alt="Phones" style="width:100%">
+            <a href="#form-fill">
+                <img src="cat-04.png" alt="Mobile Phones" style="width:100%">
             </a>
           </div>
           <div class="cateo">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUBrC9ZQ75MOCb8faJHU5iQO6P0j_QqKViAyqhoIzJJ5Trsw/viewform">
-                <img src="cat-05.png" alt="Phones" style="width:100%">
+            <a href="#form-fill">
+                <img src="cat-05.png" alt="Home and Kitchen" style="width:100%">
             </a>
           </div>
           <div class="cateo">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUBrC9ZQ75MOCb8faJHU5iQO6P0j_QqKViAyqhoIzJJ5Trsw/viewform">
-                <img src="cat-06.png" alt="Phones" style="width:100%">
+            <a href="#form-fill">
+                <img src="cat-06.png" alt="Electronics" style="width:100%">
             </a>
           </div>
           <div class="cateo">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUBrC9ZQ75MOCb8faJHU5iQO6P0j_QqKViAyqhoIzJJ5Trsw/viewform">
-                <img src="cat-07.png" alt="Phones" style="width:100%">
+            <a href="#form-fill">
+                <img src="cat-07.png" alt="Nokia" style="width:100%">
             </a>
           </div>
       </div>
@@ -516,7 +526,7 @@
 
 
 
-    <div class="section-form">
+    <div class="section-form" id="form-fill">
       <div class="header" style="color: #fff; text-align: center;">
         <p>Place your Order</p>
         <h1>Take a moment to fill out the form</h1>
@@ -547,7 +557,8 @@
                   </div>
                 </div>
 
-                <!--  Product Selection  -->
+                <!--
+
                 <div class="form-group full-width">
                   <label for="product">Select Product</label>
                   <div class="custom-select-wrapper">
@@ -559,6 +570,14 @@
                     </select>
                     <i class="fas fa-angle-down" style="position: absolute; right: 10px; top: calc(50% - 0.5em);"></i>
                   </div>
+                </div>
+
+                -->
+
+                <!--  Address Line 1  -->
+                <div class="form-group full-width">
+                  <label for="product">Product Name</label>
+                  <input type="text" id="product" name="product" placeholder="Enter Bulk Product" required>
                 </div>
 
 
